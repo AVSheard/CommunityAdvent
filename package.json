@@ -1,23 +1,23 @@
 {
-  "name": "communityAdvent",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AVSheard/communityAdvent.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AVSheard/communityAdvent/issues"
-  },
-  "homepage": "https://github.com/AVSheard/communityAdvent#readme",
-  "dependencies": {
-    "knex": "^0.21.12"
-  }
+	"name": "community-advent",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AVSheard/communityAdvent.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AVSheard/communityAdvent/issues"
+	},
+	"homepage": "https://github.com/AVSheard/communityAdvent#readme",
+	"dependencies": {
+		"knex": "^0.21.12"
+	}
 }
