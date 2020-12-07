@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AVSheard/communityAdvent/issues"
   },
-  "homepage": "https://github.com/AVSheard/communityAdvent#readme"
+  "homepage": "https://github.com/AVSheard/communityAdvent#readme",
+  "dependencies": {
+    "knex": "^0.21.12"
+  }
 }
