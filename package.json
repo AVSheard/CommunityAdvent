@@ -18,6 +18,7 @@
 	},
 	"homepage": "https://github.com/AVSheard/communityAdvent#readme",
 	"dependencies": {
-		"knex": "^0.21.12"
+		"knex": "^0.21.12",
+		"pg": "^8.5.1"
 	}
 }
