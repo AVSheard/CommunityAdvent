@@ -1,14 +1,16 @@
 exports.up = function (knex) {
 	return knex.schema.createTable("houses", (houseTable) => {
 		houseTable.increments("house_id").primary().unique();
+		houseTable.string("name").notNullable();
 		houseTable
-			.string("inCalendar")
+			.string("calendar")
 			.references("calendars.calendarName")
 			.notNullable();
 		houseTable.integer("day");
-		houseTable.decimal("lat", NULL).notNullable();
-		houseTable.decimal("long", NULL).notNullable();
-		userTable.string("display_url");
+		houseTable.decimal("latLocation", NULL).notNullable();
+		houseTable.decimal("longLocation", NULL).notNullable();
+		houseTable.string("display_url");
+		houseTable.string("owner").references("users.username");
 	});
 };
 

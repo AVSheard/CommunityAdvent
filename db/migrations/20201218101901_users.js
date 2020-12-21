@@ -4,6 +4,7 @@ exports.up = function (knex) {
 		userTable.string("name").notNullable();
 		userTable.string("avatar_url");
 		userTable.string("email").notNullable();
+		userTable.string("password").notNullable();
 	});
 };
 

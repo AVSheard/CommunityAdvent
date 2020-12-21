@@ -3,8 +3,8 @@ exports.up = function (knex) {
 		calendarTable.string("calendarName").primary().unique();
 		calendarTable.string("centreName").notNullable();
 		calendarTable.string("admin").references("users.username").notNullable();
-		calendarTable.decimal("centreLocLat", NULL).notNullable();
-		calendarTable.decimal("centreLocLong", NULL).notNullable();
+		calendarTable.decimal("longLocation", NULL).notNullable();
+		calendarTable.decimal("latLocation", NULL).notNullable();
 		userTable.string("cover_url");
 	});
 };
