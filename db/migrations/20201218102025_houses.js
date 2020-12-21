@@ -5,9 +5,10 @@ exports.up = function (knex) {
 			.string("inCalendar")
 			.references("calendars.calendarName")
 			.notNullable();
-		houseTable.integer("day").notNullable();
+		houseTable.integer("day");
 		houseTable.decimal("lat", NULL).notNullable();
 		houseTable.decimal("long", NULL).notNullable();
+		userTable.string("display_url");
 	});
 };
 

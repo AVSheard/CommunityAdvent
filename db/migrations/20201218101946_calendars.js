@@ -5,6 +5,7 @@ exports.up = function (knex) {
 		calendarTable.string("admin").references("users.username").notNullable();
 		calendarTable.decimal("centreLocLat", NULL).notNullable();
 		calendarTable.decimal("centreLocLong", NULL).notNullable();
+		userTable.string("cover_url");
 	});
 };
 
