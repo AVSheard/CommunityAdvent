@@ -1,7 +1,7 @@
 {
 	"name": "community-advent",
 	"version": "1.0.0",
-	"description": "",
+	"description": "community-advent",
 	"main": "index.js",
 	"scripts": {
 		"setup-dbs": "psql -f ./db/setup.sql",

@@ -1,5 +1,5 @@
 exports.up = function (knex) {
-	return knex.schema.createTable("houses", (houseTable) => {
+	return knex.schema.createTable("houses", (housesTable) => {
 		houseTable.increments("house_id").primary().unique();
 		houseTable.string("name").notNullable();
 		houseTable

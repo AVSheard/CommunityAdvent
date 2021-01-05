@@ -1,5 +1,5 @@
 exports.up = function (knex) {
-	return knex.schema.createTable("calendars", (calendarTable) => {
+	return knex.schema.createTable("calendars", (calendarsTable) => {
 		calendarTable.string("calendarName").primary().unique();
 		calendarTable.string("centreName").notNullable();
 		calendarTable.string("admin").references("users.username").notNullable();
